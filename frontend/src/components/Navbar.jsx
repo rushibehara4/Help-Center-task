@@ -1,9 +1,12 @@
-import Navbar from "react-bootstrap/Navbar";
-import Button from "react-bootstrap/Button";
+import React, { useState } from 'react';
+import Button from 'react-bootstrap/Button';
+import HelpCenterModal from './submitModal';
 import "../App.css";
 import { CgAbstract } from "react-icons/cg";
 
 function HelpCenterNavbar() {
+  const [modalShow, setModalShow] = useState(false);
+
   return (
     <div className="navbar-container">
       <div className="logo-container">
@@ -15,10 +18,14 @@ function HelpCenterNavbar() {
         <p className="nav-heading">Help Center</p>
       </div>
       <div className="button-container">
-        <Button type="submit" className="submit-button">
+        <Button type="button" variant='secondary' className="submit-button" onClick={() => setModalShow(true)}>
           Submit a request
         </Button>
       </div>
+      <HelpCenterModal
+        show={modalShow}
+        handleClose={() => setModalShow(false)}
+      />
     </div>
   );
 }

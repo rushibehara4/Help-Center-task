@@ -89,9 +89,10 @@
   padding-left: 10px;
 }
 
-.right-icon-search {
+.icon-search {
   margin-right: 10px;
   cursor: pointer;
+  font-size: 20px;
 }
 
 .card-bg-contianer {
@@ -112,10 +113,19 @@
   width: 70%;
 }
 
+p.error-message {
+  color: red;
+  text-align: center;
+  width: 100%;
+  font-size: 25px;
+}
+
 .card {
   margin: 20px;
   padding: 0;
   background-color: #f5f6f8;
+  width: 330px;
+  height: 150px;
 }
 
 .card-title {
@@ -171,6 +181,73 @@
   .company-information {
     margin-top: 20px;
   }
+}
+
+/* modal css */
+
+.modal-content {
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  backdrop-filter: blur(10px);
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.modal-header {
+  border-bottom: 1px solid #444;
+}
+
+.modal-footer {
+  border-top: 1px solid #444;
+}
+
+.modal-title {
+  color: #fff;
+}
+
+.close {
+  color: #ffffff;
+}
+
+.submit-button-modal {
+  background-color: #555;
+  border-color: #555;
+  color: #fff;
+  border: 1px solid white;
+  background-color: transparent;
+  width: 100%;
+  margin-top: 15px;
+}
+
+.submit-button-modal:hover {
+  background-color: #fff;
+  color: #000;
+  font-weight: 600;
+}
+
+.input-glass {
+  background: rgba(255, 255, 255, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  color: #000;
+  border-radius: 4px;
+  backdrop-filter: blur(8px);
+  padding: 10px;
+  font-size: 16px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.input-glass::placeholder {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.input-glass:focus {
+  border-color: rgba(255, 255, 255, 0.7);
+  outline: none;
+}
+
+.description-label-element {
+  margin-top: 10px;
 }
 
 @media screen and (max-width: 576px) {

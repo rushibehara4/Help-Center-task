@@ -1,27 +1,36 @@
-# Help Center API Assignment
+# Help Center API and React Project
 
-## Instructions
+## Features
 
-1. **Clone the Repository:**
-   ```bash
-   git clone https://github.com/iAmritMalviya/fullstack-assignment
-   cd fullstack-assignment
-   ```
+- **Frontend**: 
+  - Built with React.
+  - Search functionality for filtering cards by title.
+  - Modal for submitting new help center cards.
 
-2. **Frontend:**
-   - Create a React app in the `frontend` folder.
-   - Follow the instructions in `frontend.md` to complete the frontend.
+- **Backend**: 
+  - Built with Node.js and Express.
+  - RESTful API for managing help center cards.
+  - Connection to MongoDB for data storage.
 
-3. **Backend:**
-   - Create a Node.js app in the `backend` folder.
-   - Follow the `backend.md` instructions to complete the backend.
+- **Database**: 
+  - MongoDB for storing help center card details.
 
-4. **Push Your Work:**
-   - Push both the frontend and backend apps to the same repository.
-   - Make sure the repository is public.
+## Backend Setup
 
-5. **Submit Your Work:**
-   - Paste the GitHub repository link in the Google form you received after pushing your code.
+1. Navigate to the `cd backend` folder.
+2. Install dependencies: `npm install`
+3. Run the server: `node index.js`
 
----
+## Frontend Setup
 
+1. Navigate to the `cd frontend` folder.
+2. Install dependencies: `npm install`
+3. Run the React app: `npm run dev`
+
+## API Endpoints
+
+- **GET /api/ping:** Check if the server is running.
+
+- **POST /api/cards:** Create a new card.
+- **GET /api/cards:** Retrieve all cards.
+- **GET /api/cards/:title:** Retrieve a specific card by title.
